@@ -1,7 +1,5 @@
-<template>
-  <div>
-    Sorry! The page you are looking for doesn't exist!
-  </div>
+<template lang="pug">
+  div Sorry! The page you are looking for doesn't exist!
 </template>
 <script>
  /* ============

@@ -1,5 +1,5 @@
-<template>
-  <router-view />
+<template lang="pug">
+  router-view
 </template>
 <script>
   /* ============
@@ -44,4 +44,5 @@
       this.$bus.$on('scammer@deleted', scammer => store.dispatch('scammer/deleted', scammer));
     },
   };
+
 </script>

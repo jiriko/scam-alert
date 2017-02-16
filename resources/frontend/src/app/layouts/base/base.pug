@@ -1,0 +1,13 @@
+div
+  header
+    v-toolbar(title="Scam alert")
+    v-drawer(:is-active="application.drawerActive")
+
+  div.content
+    slot
+
+  footer
+    | footer
+
+  transition(name="fade")
+    v-overlay(v-show="application.drawerActive")

@@ -1,0 +1,13 @@
+div
+  v-layout
+    table
+      thead
+        tr
+          th Id
+          th Name
+      tbody
+        tr(v-for="scammer in scammer.all")
+          td {{ scammer.id }}
+          td
+            router-link(:to="{ name: 'scammers.show', params: { scammerId: scammer.id } }")
+              | {{ scammer.getFullName() }}
